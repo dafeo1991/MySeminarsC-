@@ -1,0 +1,15 @@
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\bin\Debug\net7.0\lecture_1.exe
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\bin\Debug\net7.0\lecture_1.deps.json
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\bin\Debug\net7.0\lecture_1.runtimeconfig.json
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\bin\Debug\net7.0\lecture_1.dll
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\bin\Debug\net7.0\lecture_1.pdb
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.csproj.AssemblyReference.cache
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.AssemblyInfoInputs.cache
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.AssemblyInfo.cs
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.csproj.CoreCompileInputs.cache
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.dll
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\refint\lecture_1.dll
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.pdb
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\lecture_1.genruntimeconfig.cache
+C:\Users\даша\Desktop\IT2023\C#_introduction_to_programming_languages\lecture_1\obj\Debug\net7.0\ref\lecture_1.dll

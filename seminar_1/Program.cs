@@ -68,3 +68,39 @@
 
 // способ 2
 // Console.WriteLine(Math.Abs(num)%10);
+
+
+// 5. Напишите программу, которая будет выдавать название дня недели по заданному номеру.
+
+Console.WriteLine("Введите число");
+int day = Convert.ToInt32(Console.ReadLine());
+
+if (0 < day && day < 8)
+{
+    if (day == 1) {
+        Console.WriteLine($"{day} -> понедельник"); 
+    }
+     if (day == 2) {
+        Console.WriteLine($"{day} -> вторник");
+    }
+    if (day == 3) {
+        Console.WriteLine($"{day} -> среда"); 
+    }
+        if (day == 4) {
+        Console.WriteLine($"{day} -> четверг"); 
+    }
+    if (day == 5) {
+        Console.WriteLine($"{day} -> пятница"); 
+    }
+    if (day == 6) {
+        Console.WriteLine($"{day} -> суббота"); 
+    }
+    if (day == 7) {
+        Console.WriteLine($"{day} -> воскресение"); 
+    }
+}
+else
+{
+    Console.WriteLine("Такого дня недели нет"); 
+}
+

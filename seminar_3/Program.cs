@@ -196,19 +196,33 @@
 
 // 3.  Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 
-double Dist ()
-{
-Console.Write("ВВедите координату первой точки Х1: \t");
-double x1 = Convert.ToDouble(Console.ReadLine());
-Console.Write("ВВедите координату первой точки Y1: \t");
-double y1 = Convert.ToDouble(Console.ReadLine());
-Console.Write("ВВедите координату второй точки Х2: \t");
-double x2 = Convert.ToDouble(Console.ReadLine());
-Console.Write("ВВедите координату второй точки Y2: \t");
-double y2 = Convert.ToDouble(Console.ReadLine());
+// double Dist ()
+// {
+// Console.Write("ВВедите координату первой точки Х1: \t");
+// double x1 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("ВВедите координату первой точки Y1: \t");
+// double y1 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("ВВедите координату второй точки Х2: \t");
+// double x2 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("ВВедите координату второй точки Y2: \t");
+// double y2 = Convert.ToDouble(Console.ReadLine());
 
-double res = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2));
-return res;
-}
+// double res = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2));
+// return res;
+// }
 
-Console.Write($"Расстояние между точками: \t {Dist()}");
+// Console.Write($"Расстояние между точками: \t {Dist()}");
+
+// 4. Напишите программу которая принимает на вход число (N) и выдает на консоль квадраты чисел от 1 до N
+
+// Console.WriteLine("Введите число");
+// int n = int.Parse(Console.ReadLine());
+// void SquareUpToN(int n)
+// {
+// for (int i = 1; i <= n; i++)
+// {
+// System.Console.Write(" "+Math.Pow(i, 2));
+// }
+// }
+// SquareUpToN(n);
+

@@ -23,8 +23,8 @@
 
 // int CountDigit (int num)
 // {
-//     int count = 0;
-//     while (num > 0)
+//     int count = 1;
+//     while (num > 9)
 //     {
 //         num = num / 10;
 //         count ++;
@@ -110,11 +110,53 @@
 
 // PrintArray(array);
 
+// Семинар с Кириллом
+
+// Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
+// 7 -> 28
+// 4 -> 10
+// 8 -> 36
+
+// int SumNumbers(int number)
+// {
+// int result = 0;
+// for (int y = 1; y <= number; y++)
+// result += y;
+// return result;
+// }
+// Console.Write("Введите число: ");
+// int number = int.Parse(Console.ReadLine());
+// Console.WriteLine("Результат суммы цифр: " + SumNumbers(number));
+
+// Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
+// 456 -> 3
+// 78 -> 2
+// 89126 -> 5
 
 
+// Способ 1
+
+// Console.Write("Введите число:\t");
+// string s = Console.ReadLine();
+// int result = s.Length;
+// Console.WriteLine("Количество цифр в числе: " + result);
+
+// Способ 2
+
+// int Input ()
+// {
+//     Console.Write("Введите число: ");
+//     string s = Console.ReadLine();
+//     return s.Length;
+// }
+// int str = Input();
+// Console.WriteLine("Количество цифр в числе: " + str);
 
 
+// Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
 
+// Способ 1
 
 int [] CreateRandomArray (int size, int minValue, int maxValue)
 {
@@ -129,7 +171,7 @@ int [] CreateRandomArray (int size, int minValue, int maxValue)
 
 void PrintArray (int [] array)
 {   
-    System.Console.WriteLine($"[{string.Join(", ", array)}]");
+    Console.WriteLine($"[{string.Join(", ", array)}]");
     // for (int i = 0; i < array.Length; i++)
     // {
     //     Console.Write(array[i] + " ");
@@ -145,6 +187,21 @@ int maxValue = Convert.ToInt32(Console.ReadLine());
 
 int[] arr = CreateRandomArray(size, minValue, maxValue);
 PrintArray(arr);
+
+// Способ 2
+
+int[] Random(int number)
+{
+int[] result = new int[number];
+for (int y = 0; y < number; y++)
+result[y] = (new Random().Next(0, 2));
+return result;
+}
+Console.Write("Введите количество цифр: ");
+int number = int.Parse(Console.ReadLine());
+Console.WriteLine(String.Join(", ", Random(number)));
+
+
 
 
 

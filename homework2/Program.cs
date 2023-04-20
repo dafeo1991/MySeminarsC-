@@ -27,27 +27,60 @@
 
 // 32679 -> 6
 
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
+// Способ 1
 
-if (num / 100 > 0)
-{
-    string num2 = num.ToString();       // создали переменную и приравняли ее к числу которое ввел пользователь в типе строки
-    int[] array = new int[num2.Length]; // создали массив у которого длинна как у переменной num2
-    for( int i = 0; i < num2.Length; i++)  // заполняем наш массив
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num / 100 > 0)
+// {
+//     string num2 = num.ToString();       // создали переменную и приравняли ее к числу которое ввел пользователь в типе строки
+//     int[] array = new int[num2.Length]; // создали массив у которого длинна как у переменной num2
+//     for( int i = 0; i < num2.Length; i++)  // заполняем наш массив
+//     {
+//      array[i] = Convert.ToInt32(num2[i].ToString()); // переводим num2 обратно в число и ложим в элемент массива элемент num2 
+//                                                      // который является строкой 
+//     }
+//     Console.WriteLine($"Третья цифра у числа {num} -> {array[2]}");   // выводим третий элемент массива
+// }
+// else
+// {
+//     Console.WriteLine($"Третьей цифры у числа {num} нет");
+// }
+
+// Способ 2
+
+int GetDigitFromNumber (int number, int digitPosition)
+{   
+    number = Math.Abs(number);
+    
+    if (number < Math.Pow(10, digitPosition))
     {
-     array[i] = Convert.ToInt32(num2[i].ToString()); // переводим num2 обратно в число и ложим в элемент массива элемент num2 
-                                                     // который является строкой 
+        return -1;
     }
-    Console.WriteLine($"Третья цифра у числа {num} -> {array[2]}");   // выводим третий элемент массива
+    while (number > Math.Pow(10, digitPosition))
+    {
+        number/=10;
+    }
+    return number % 10;
+}
+
+int ReadInt()
+{
+    Console.Write("Введите число: \t");
+    return int.Parse(Console.ReadLine());
+}
+
+int digit = GetDigitFromNumber(ReadInt(), ReadInt());
+
+if (digit != -1)
+{
+    Console.Write(digit);
 }
 else
 {
-    Console.WriteLine($"Третьей цифры у числа {num} нет");
+    Console.Write("OOps");
 }
-
-
-
 
 
 // Console.WriteLine(125%)

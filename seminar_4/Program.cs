@@ -80,35 +80,35 @@
 
 // Способ 2
 
-// int [] CreateRandomArray(int size, int minValue, int maxValue)
-// {
-//     int [] newArray = new int [size];
-//     for (int i = 0; i < size; i++)
-//     {
-//         newArray[i] = new Random().Next(minValue, maxValue + 1);
-//     }
-//     return newArray;
-// }
+int [] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int [] newArray = new int [size];
+    for (int i = 0; i < size; i++)
+    {
+        newArray[i] = new Random().Next(minValue, maxValue + 1);
+    }
+    return newArray;
+}
 
-// void PrintArray (int[] array) 
-// {
-//   Console.Write("Получившийся массив -> ");
-//   for (int i = 0; i < array.Length; i++)
-//   {
-//     Console.Write(array[i] + " ");
-//   }
-// }
+void PrintArray (int[] array) 
+{
+  Console.Write("Получившийся массив -> ");
+  for (int i = 0; i < array.Length; i++)
+  {
+    Console.Write(array[i] + " ");
+  }
+}
 
-// Console.Write("Введите размер массива: ");
-// int size = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите минимальное число: ");
-// int minValue = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите максимальное число: ");
-// int maxValue = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите минимальное число: ");
+int minValue = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите максимальное число: ");
+int maxValue = Convert.ToInt32(Console.ReadLine());
 
-// int[] array = CreateRandomArray(size, minValue, maxValue);
+int[] array = CreateRandomArray(size, minValue, maxValue);
 
-// PrintArray(array);
+PrintArray(array);
 
 // Семинар с Кириллом
 
@@ -200,48 +200,3 @@ return result;
 Console.Write("Введите количество цифр: ");
 int number = int.Parse(Console.ReadLine());
 Console.WriteLine(String.Join(", ", Random(number)));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -49,32 +49,32 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int [] Array (int size)
-{
-    int[]array = new int [size];
-    for (int i = 0; i < size; i++)
-    {
-        array[i] = new Random().Next(0,10);
-    }
-    return array;
-}
+// int [] Array (int size)
+// {
+//     int[]array = new int [size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(0,10);
+//     }
+//     return array;
+// }
 
-void PrintArray (int [] array)
-{   
-    Console.WriteLine($"[{String.Join(" * ", array)}]");
+// void PrintArray (int [] array)
+// {   
+//     Console.WriteLine($"[{String.Join(" * ", array)}]");
 
-    // for (int i = 0; i < array.Length; i++)
-    // {
-    //     Console.Write(array[i] + " ");
+//     // for (int i = 0; i < array.Length; i++)
+//     // {
+//     //     Console.Write(array[i] + " ");
        
-    // }
-}
+//     // }
+// }
 
-Console.Write("Введите размер массива: ");
-int size = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите размер массива: ");
+// int size = Convert.ToInt32(Console.ReadLine());
 
-int [] myArray = Array(size);
+// int [] myArray = Array(size);
 
-PrintArray(myArray);
+// PrintArray(myArray);
 
 

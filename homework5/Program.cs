@@ -1,5 +1,4 @@
 ﻿
-
 int[] Array(int size, int minValue, int maxValue)
 {
     int[] array = new int[size];
@@ -7,16 +6,39 @@ int[] Array(int size, int minValue, int maxValue)
     for (int i = 0; i < size; i++)
     {
         array[i] = rnd.Next(minValue, maxValue + 1);
+        
     }
     return array;
 }
 
 void PrintArray(int[] array)
-{   
+{
     Console.Write("Получившийся массив -> ");
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+double[] MyArray(int size, int max)
+{
+    double[] array = new double[size];
+    Random rnd = new Random();
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = rnd.NextDouble() * max;
+        array[i] = Math.Round(array[i], 2); 
+    }
+    return array;
+}
+
+void MyPrintArray(double[] array, int max)
+{
+    Console.Write($"Получившийся массив от 0 до {max} -> ");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + ";  ");
     }
     Console.WriteLine();
 }
@@ -47,31 +69,33 @@ int Non_EvenIndex(int[] array)
     return sum;
 }
 
-void DifferenceOfNumbers(int[] array)
+void DifferenceOfNumbers(double[] array)
 {
-    int min = array[0];
-    int max = array[0];
+    double min = array[0];
+    double max = array[0];
 
     for (int i = 1; i < array.Length; i++)
     {
         if (array[i] > max) max = array[i];
         if (array[i] < min) min = array[i];
     }
-    int diff = max - min;
+    double diff = Math.Round(max - min, 2);
     Console.WriteLine($"Максимальный элемент -> {max}, минимальный элемент -> {min}, разница между ними -> {diff}");
 }
 
 Console.Write("Введите количество элементов: ");
 int size = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите минимальное число: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите максимальное число: ");
-int max = Convert.ToInt32(Console.ReadLine());
 
 // Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
 void Task1()
 {
+    Console.Write("Введите минимальное число: ");
+    int min = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите максимальное число: ");
+    int max = Convert.ToInt32(Console.ReadLine());
+
+
     Array(size, min, max);
     int[] numbers = Array(size, min, max);
 
@@ -85,6 +109,12 @@ void Task1()
 
 void Task2()
 {
+    Console.Write("Введите минимальное число: ");
+    int min = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите максимальное число: ");
+    int max = Convert.ToInt32(Console.ReadLine());
+
+
     Array(size, min, max);
     int[] numbers = Array(size, min, max);
 
@@ -99,11 +129,14 @@ void Task2()
 
 void Task3()
 {
-    Array(size, min, max);
-    int[] numbers = Array(size, min, max);
+    Console.Write("Введите максимальное число: ");
+    int max = Convert.ToInt32(Console.ReadLine());
 
-    PrintArray(numbers);
+    MyArray(size, max);
+    double[] numbers = MyArray(size, max);
+
+    MyPrintArray(numbers, max);
     DifferenceOfNumbers(numbers);
 }
-Task3();
+// Task3();
 
